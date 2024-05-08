@@ -100,7 +100,10 @@ def get_repos(chat_id):
     with open(file_path, "r") as cur_data:
         data: dict = json.load(cur_data)
 
-    return set(data["chats"][str(chat_id)]), set(data["repositories"].keys())
+    if str(chat_id) in data["chats"]:
+        return set(data["chats"][str(chat_id)]), set(data["repositories"].keys())
+    else:
+        return set(), set(data["repositories"].keys())
 
 
 def set_chat(chat_id: int, repo: str):
