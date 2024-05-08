@@ -1,0 +1,15 @@
+{
+  "Biotron": {
+    "OWNER": "Playtronica",
+    "REPO": "biotron-firmware"
+  },
+  "Theremin": {
+    "OWNER": "Playtronica",
+    "REPO": "theremin-firmware"
+  },
+  "Keys": {
+    "OWNER": "Playtronica",
+    "REPO": "Keys-firmware"
+  }
+}
+
