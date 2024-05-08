@@ -3,11 +3,9 @@ import json
 from os import path
 from pathlib import Path
 
-from apscheduler.triggers.interval import IntervalTrigger
-
 import variables
 from git_realeses_controller import *
-from apscheduler.schedulers.asyncio import AsyncIOScheduler
+
 
 parent_dir = path.dirname(path.abspath(__file__))
 file_path = Path(f"{parent_dir}/../static/chats_info.json")
